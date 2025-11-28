@@ -1,0 +1,21 @@
+title: "Samadhi Senanayake"
+description: "Biotechnology researcher specializing in lamprey adaptive immunity, variable lymphocyte receptors, and infectious disease diagnostics"
+baseurl: ""        # For user site like username.github.io, leave blank
+url: ""            # You can set this later to "https://samadhisenanayake.github.io"
+
+# Markdown configuration
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Build settings
+permalink: pretty
+
+# Social links are loaded from _data/social.yml
+# Publications are loaded from _data/publications.yml
+
+# Author information
+author:
+  name: "Samadhi Senanayake"
+  position: "Microbiologist"
+  affiliation: "Voyant Beauty"

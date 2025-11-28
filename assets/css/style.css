@@ -1,0 +1,398 @@
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #f7f7fb;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  padding: 0.5rem 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-weight: 600;
+  text-decoration: none;
+  color: #1f2933;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #059669; /* Green accent color for science theme */
+}
+
+/* Hero section */
+.hero {
+  padding: 3.5rem 0 2.5rem;
+  background: linear-gradient(135deg, #d1fae5, #f7f7fb);
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 260px;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #111827;
+}
+
+.hero-tagline {
+  margin: 0;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.hero-image {
+  flex: 0 0 180px;
+  max-width: 220px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 999px;
+  border: 3px solid #e5e7eb;
+  object-fit: cover;
+}
+
+/* Hero social links */
+.hero-social-links {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+/* Sections */
+.section {
+  padding: 2.75rem 0;
+}
+
+.section-alt {
+  background-color: #ffffff;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.section h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #1f2933;
+}
+
+/* About text */
+#about p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+/* Research section */
+.research-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.research-list li {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.research-list strong {
+  color: #111827;
+}
+
+/* Chips / Technical Skills */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background-color: #d1fae5;
+  color: #065f46;
+  font-size: 0.85rem;
+}
+
+/* Publications */
+.publication-type-header {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1f2933;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #059669;
+}
+
+.publication-type-header:first-of-type {
+  margin-top: 0;
+}
+
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.publication-title a {
+  color: #059669;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publication-title a:hover,
+.publication-title a:focus {
+  text-decoration: underline;
+}
+
+.publication-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors::after {
+  content: " ";
+}
+
+.pub-venue {
+  margin-left: 0.25rem;
+}
+
+.pub-doi {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.pub-doi a {
+  color: #059669;
+  text-decoration: none;
+}
+
+.pub-doi a:hover {
+  text-decoration: underline;
+}
+
+.publication-summary {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.bib-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.9rem;
+  transition: background-color 0.15s ease;
+}
+
+.bib-download:hover {
+  background-color: #e5e7eb;
+}
+
+/* CV section */
+.cv-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.cv-list li {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.cv-download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #059669;
+  color: #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+}
+
+.cv-download-button:hover {
+  background-color: #047857;
+}
+
+/* Contact section */
+.contact-links {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Social links */
+.social-link-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.9rem;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.social-link-item a:hover,
+.social-link-item a:focus {
+  background-color: #059669;
+  color: #ffffff;
+  border-color: #059669;
+}
+
+.social-link-item i {
+  font-size: 1.1rem;
+}
+
+.resume-download {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  font-weight: 500;
+}
+
+.resume-download:hover,
+.resume-download:focus {
+  background-color: #047857 !important;
+  border-color: #047857 !important;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .hero-name {
+    font-size: 2.25rem;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,18 @@
+- name: "LinkedIn"
+  icon: "fa fa-linkedin"
+  url: "https://www.linkedin.com/in/samadhi-22b62a232/"
+
+# TODO: Add Google Scholar link if available
+# - name: "Google Scholar"
+#   icon: "fa fa-graduation-cap"
+#   url: "YOUR_GOOGLE_SCHOLAR_URL"
+
+# TODO: Add ORCID if available
+# - name: "ORCID"
+#   icon: "fa fa-orcid"
+#   url: "https://orcid.org/YOUR-ORCID-ID"
+
+# TODO: Replace with actual professional email
+- name: "Email"
+  icon: "fa fa-envelope"
+  url: "mailto:your.email@example.com"
