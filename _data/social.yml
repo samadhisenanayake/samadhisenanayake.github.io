@@ -2,6 +2,10 @@
   icon: "fa fa-linkedin"
   url: "https://www.linkedin.com/in/samadhi-22b62a232/"
 
+- name: "GitHub"
+  icon: "fa fa-github"
+  url: "https://github.com/samadhisenanayake"
+
 # TODO: Add Google Scholar link if available
 # - name: "Google Scholar"
 #   icon: "fa fa-graduation-cap"
