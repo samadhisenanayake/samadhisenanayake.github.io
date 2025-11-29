@@ -207,10 +207,6 @@ title: "Samadhi Senanayake"
         <strong>Bachelor's degree, Biology/Biological Sciences</strong><br>
         Georgia State University (May 2020 - December 2022)
       </li>
-      <li>
-        <strong>Bachelor's degree, Biology/Applied Bioscience</strong><br>
-        Kanazawa Institute of Technology, Japan (January 2015 - July 2018)
-      </li>
     </ul>
 
     <h3>Professional Experience</h3>
